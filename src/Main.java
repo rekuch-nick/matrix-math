@@ -3,15 +3,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		int[][] test1 = {
-			{1, 2, 3},
-			{4, 5, 6},
-			{1, 1, 1}
+			{1, 3, 2},
+			{0, 1, 1},
+			{2, 1, 5}
 		};
 		
 		int[][] test2 = {
-				{7, 8, 1},
-				{9, 10, 1},
-				{11, 12, 1}
+				{1, 0, 1},
+				{3, 1, 1},
+				{2, 1, 1}
 		};
 		
 		print(
@@ -29,7 +29,6 @@ public class Main {
 	
 	public static int[][] multiply(int[][] a1, int[][] a2) {
 	    if(a1.length != a2[0].length){ return null; }
-	    if(a1[0].length != a2.length){ return null; }
 
 	    int xBounds = Math.min(a1.length, a2.length);
 	    int yBounds = Math.min(a1[0].length, a2[0].length);
@@ -55,9 +54,6 @@ public class Main {
 	    return a3;
 	}
 	
-
-	
-
 
 	  public static int[][] add(int[][] a1, int[][] a2) {
 	    if(a1.length != a2.length){ return null; }
